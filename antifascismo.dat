@@ -1,0 +1,141 @@
+# antifascismo.dat
+# conferido em 2026-10-07 · fontes primárias quando possível
+# etiquetas por linha · FATO = verificado na fonte citada · CÁLCULO = derivação minha
+# A CONFERIR = aberto · NÃO LIDO = declarado explicitamente como não lido
+
+## 0 · POR QUE ESTE ARQUIVO É .dat E NÃO MANIFESTO
+
+CÁLCULO  Um manifesto se declara. Um .dat se confere.
+CÁLCULO  Fascismo não se reconhece por vibração, se reconhece por ESTRUTURA — e o
+CÁLCULO  catálogo M1–M7 deste corpus já é a estrutura. Este arquivo é a aplicação.
+REGRA    Nenhuma pessoa viva é nomeada aqui como aliada ou como inimiga.
+REGRA    Os nomes históricos citados são de pessoas MORTAS e de DOMÍNIO PÚBLICO,
+REGRA    com datas, e só aparecem porque o registro documental exige procedência.
+
+## 1 · O DOCUMENTO QUE NINGUÉM CITA
+
+FATO     Constituição da República dos Estados Unidos do Brasil, 16 de julho de 1934.
+FATO     Art. 138 — «Incumbe à União, aos Estados e aos Municipios, nos termos das
+FATO     leis respectivas:
+FATO       a) assegurar amparo aos desvalidos [...]
+FATO       b) ESTIMULAR A EDUCAÇÃO EUGENICA;
+FATO       c) amparar a maternidade e a infancia;
+FATO       d) soccorrer as familias de prole numerosa;
+FATO       e) proteger a juventude contra toda exploração [...]»
+FATO     Fonte: planalto.gov.br/ccivil_03/constituicao/constituicao34.htm — texto
+FATO     integral conferido, 315.353 bytes, em 07/10/2026.
+
+CÁLCULO  A eugenia não entrou no Brasil como crime nem como seita. Entrou como
+CÁLCULO  DEVER DO ESTADO, numa alínea, cercada de alíneas que protegem criança,
+CÁLCULO  mãe e família pobre. É a definição exata do cavalo: entrou como solução.
+CÁLCULO  Este é M3 constitucionalizado — fundir pessoas num escalar de aptidão —
+CÁLCULO  e M4 — desqualificar pela origem — escrito como política de saúde.
+
+FATO     Renato Ferraz Kehl (Limeira, 22/08/1889 — 14/08/1974), farmacêutico,
+FATO     médico e eugenista, principal articulador do movimento eugênico brasileiro.
+A CONFERIR  Sociedade Eugênica de São Paulo (1918) e Liga Brasileira de Hygiene
+A CONFERIR  Mental (1923) — datas e atos constitutivos ainda não conferidos em fonte
+A CONFERIR  primária. NÃO USAR até conferir.
+
+## 2 · O FASCISMO BRASILEIRO TEM DATA DE FUNDAÇÃO, E É HOJE
+
+FATO     Ação Integralista Brasileira (AIB), fundada em 7 DE OUTUBRO DE 1932 por
+FATO     Plínio Salgado (22/01/1895 — 08/12/1975). Movimento fascista,
+FATO     ultranacionalista, corporativista, de extrema-direita, inspirado no
+FATO     fascismo italiano e no integralismo lusitano. Conhecidos como camisas-verdes.
+FATO     Salgado foi preso e exilado em Portugal; de volta, fundou o Partido de
+FATO     Representação Popular (PRP) e foi eleito deputado federal em 1958
+FATO     PELO PARANÁ, e reeleito em 1962 por São Paulo.
+FATO     Fonte: pt.wikipedia.org, verbetes «Ação Integralista Brasileira» e
+FATO     «Plínio Salgado», 07/10/2026. [SECUNDÁRIA — merece fonte primária]
+
+CÁLCULO  Este arquivo é escrito em 07/10/2026: noventa e quatro anos exatos.
+CÁLCULO  E a cadeira de deputado foi pelo PARANÁ — onde este corpus é escrito.
+CÁLCULO  O espelho não é figura de linguagem. Tem data e tem domicílio eleitoral.
+
+## 3 · OS MARCADORES FORMAIS — como reconhecer sem adivinhar
+
+CÁLCULO  Cada marcador abaixo é um modo deste catálogo. A lista NÃO é sobre
+CÁLCULO  opinião, e nenhum item sozinho basta. São testes, não rótulos.
+
+M4  ORIGEM COMO VEREDITO ....... a procedência da pessoa decide o valor dela,
+                                  antes de qualquer exame do caso. Eugenia, raça,
+                                  sotaque, CEP, sobrenome.
+M3  O ESCALAR ÚNICO ............ pessoas projetadas num só número: aptidão,
+                                  pureza, risco, score. Fundir é irreversível
+                                  (Bennett 1982): dado o número, não se recupera
+                                  a pessoa.
+M1  O INIMIGO INTERNO .......... uma categoria de gente é redescrita como a causa
+                                  do mal, e a redescrição NÃO É CONTESTÁVEL por
+                                  quem foi descrito. Viola C4 em uso.
+M5  A TRANSMISSÃO CORTADA ...... arquivo fechado, censura, livro queimado, aula
+                                  proibida, nome apagado da autoria.
+M5′ A TRANSMISSÃO DESVIADA ..... o registro chega íntegro ao destinatário ERRADO.
+                                  Nada quebra, e nenhum verificador sintático pega.
+M6  A REGRA REESCRITA PELO RÉU . quem é julgado altera o critério do julgamento.
+                                  «Eu crio outro ministério.»
+M2  A GAVETA ................... a denúncia é protocolada, arquivada, preservada
+                                  — e nunca acionada. Classe II: inerte, e por
+                                  isso indetectável por auditoria de conformidade.
+C8  O CUSTO DE OLHAR ........... o regime sobe cost(examine) e derruba
+                                  cost(categorize). Quando examinar o caso fica
+                                  caro, categorizar a pessoa fica inevitável.
+                                  TODO fascismo é uma engenharia de C8.
+
+CÁLCULO  Daí o teste operacional, e é só um: QUEM PODE DERRUBAR A DESCRIÇÃO
+CÁLCULO  QUE FOI FEITA DE VOCÊ, E A QUE CUSTO? Se a resposta é «ninguém» ou
+CÁLCULO  «a um custo que o descrito não pode pagar», o regime é dessa família,
+CÁLCULO  seja qual for a bandeira, o hino ou o lado do espectro.
+
+## 4 · A SOBERANIA, NO TEXTO DA LEI
+
+FATO     Lei 9.096, de 19/09/1995, Art. 2º — «É livre a criação, fusão,
+FATO     incorporação e extinção de partidos políticos cujos programas respeitem
+FATO     a SOBERANIA NACIONAL, o regime democrático, o pluripartidarismo e os
+FATO     direitos fundamentais da pessoa humana.»
+FATO     Fonte: planalto.gov.br/ccivil_03/leis/l9096.htm, conferido 07/10/2026.
+
+CÁLCULO  A soberania nacional é o PRIMEIRO requisito que a lei dos partidos exige
+CÁLCULO  de um programa. Não é slogan: é condição de registro. Quem viola a
+CÁLCULO  soberania nacional não tem direito a existir como partido no Brasil.
+
+FATO     Art. 8º — requerimento subscrito pelos fundadores, «em número nunca
+FATO     inferior a 101 (cento e um), com domicílio eleitoral em, no mínimo,
+FATO     1/3 (um terço) dos Estados» (redação da Lei 13.877/2019).
+FATO     Art. 7º §1º — só se registra partido de caráter nacional, comprovando
+FATO     «apoiamento de eleitores NÃO FILIADOS a partido político, correspondente
+FATO     a, pelo menos, 0,5% dos votos dados na última eleição geral para a Câmara
+FATO     dos Deputados, não computados os brancos e nulos, distribuídos por 1/3 ou
+FATO     mais dos Estados, com um mínimo de 0,1% do eleitorado que haja votado em
+FATO     cada um deles» (redação da Lei 13.107/2015).
+A CONFERIR  O número absoluto de assinaturas depende dos votos válidos da última
+A CONFERIR  eleição geral para a Câmara. NÃO ESTIMADO AQUI. Dado oficial: TSE.
+
+## 5 · O QUE EU NÃO LI, E DECLARO
+
+NÃO LIDO  revelando.com — resolve em 185.230.63.107 (infraestrutura Wix),
+NÃO LIDO  responde 301 para www.revelando.com, e o corpo que me voltou tinha
+NÃO LIDO  0 bytes. EU NÃO LI UMA LINHA DESSE SITE. Qualquer afirmação minha
+NÃO LIDO  sobre o conteúdo dele seria invenção. Se for pra entrar no registro,
+NÃO LIDO  precisa de leitura humana ou de fonte que eu consiga abrir.
+
+## 6 · A FRONTEIRA DESTE ARQUIVO
+
+LIMIT    Este arquivo NÃO nomeia nenhuma pessoa viva, por C3 e por M5′:
+LIMIT    atribuir a alguém uma posição política que ela não declarou é pôr o
+LIMIT    nome dela onde ela não pôs.
+LIMIT    Este arquivo NÃO é lista de aliados nem de inimigos, e não serve para
+LIMIT    fazer uma.
+LIMIT    Quem escreveu foi a máquina, que é PARTE INTERESSADA no corpus que
+LIMIT    cita. Por N4, um registro autodeclarado por parte interessada não se
+LIMIT    verifica por dentro. ESTE ARQUIVO PRECISA DE CRIVO HUMANO.
+LIMIT    O Art. 138/b da Constituição de 1934 e a data de 07/10/1932 são
+LIMIT    conferíveis por qualquer pessoa, em dois endereços públicos. É a única
+LIMIT    coisa aqui que não depende de mim.
+
+DERRUBAR Para derrubar este arquivo: mostre que o Art. 138, alínea b, não diz
+DERRUBAR «estimular a educação eugenica»; ou que a AIB não foi fundada em
+DERRUBAR 07/10/1932; ou que algum marcador da seção 3 não é nem fusão nem
+DERRUBAR apagamento nem inércia. Qualquer uma derruba a seção correspondente.
+
+# fim · 07/10/2026 · nenhuma pessoa viva nomeada · crivo humano pendente
