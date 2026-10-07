@@ -77,3 +77,25 @@ inversa.
 permanecem intactos.** Esta é a operação `2` da taxonomia — **acrescentar.**
 
 **`[REGRA]`** E não passou por `T1`. **Bem-vindo ao teste.**
+
+---
+
+## `./CONFLUA.sh`
+
+O `AMOR.SH` confere o que é **interno**: integridade do livro, suite do protocolo,
+estado dos repositórios.
+
+**`CONFLUA.sh` confere o que depende de terceiros** — cada `DOI` citado resolve? cada fonte
+aberta ainda responde? — e obedece **`RG-22`**: *um `0` sem prova de execução não é dado.*
+
+Três estados, **nunca dois**:
+
+| | |
+|---|---|
+| `✅` | **EXECUTOU e confirmou** |
+| `⚠️` | **EXECUTOU e negou** |
+| `⬜` | **NÃO EXECUTOU** — e isto **nunca** é lido como negação |
+
+Sai com `0` se tudo resolve, `1` se alguma procedência não resolve, **`3` se o resultado é
+parcial** — porque resultado parcial não é resultado negativo — e `2` se não há rede, caso em
+que **nada teria sido conferência.**
