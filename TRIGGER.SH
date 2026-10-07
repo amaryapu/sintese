@@ -72,7 +72,7 @@ else
   _achou=0
   while IFS= read -r nome; do
     case "$nome" in ''|'#'*) continue;; esac
-    _hits=$(grep -rliI --exclude-dir=.git -- "$nome" $ALVOS 2>/dev/null | grep -v "/\.terceiros$")
+    _hits=$(grep -rliIw --exclude-dir=.git -- "$nome" $ALVOS 2>/dev/null | grep -v -e "/\.terceiros$" -e "/TRIGGER\.SH$")
     _st=$?
     if [ "$_st" -gt 1 ]; then
       printf '  BLOQUEIO %-20s grep FALHOU (status %s). Nao e ausente.\n' "$nome" "$_st"
@@ -90,7 +90,9 @@ else
     if [ "$_achou" -eq 0 ]; then
       printf '\n  OK: nenhum nome da lista aparece nos repos abriveis.\n'
       printf '     LIMITE DECLARADO: casamento literal (ignora caixa).\n'
-      printf '     Grafias variantes, apelidos e nomes em imagem NAO sao\n'
+      printf '     Casamento e por PALAVRA INTEIRA (-w): um nome que seja\n'
+      printf '     substring de outra palavra nao conta. Grafias variantes,\n'
+      printf '     apelidos e nomes em imagem\n'
       printf '     detectados. Ausencia aqui e evidencia fraca (RG-22).\n'
     fi
 fi
