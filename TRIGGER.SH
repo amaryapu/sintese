@@ -40,13 +40,28 @@ tit "1 · TERCEIROS VIVOS — o bloqueio duro"
 LISTA="$RAIZ/sintese/.terceiros"
 # repos que nunca abrem, por desenho — não são varridos.
 SEMPRE="$RAIZ/sintese/.privado-sempre"
-ALVOS=""
+ALVOS=""; _excl=""; _nalvo=0
 for _p in "$RAIZ"/*/; do
   _r=$(basename "$_p"); [ -d "$_p/.git" ] || continue
-  if [ -f "$SEMPRE" ] && grep -qx -- "$_r" "$SEMPRE" 2>/dev/null; then continue; fi
-  ALVOS="$ALVOS $_p"
+  if [ -f "$SEMPRE" ] && grep -qx -- "$_r" "$SEMPRE" 2>/dev/null; then
+    _excl="$_excl $_r"; continue
+  fi
+  ALVOS="$ALVOS $_p"; _nalvo=$((_nalvo+1))
 done
-printf '  escopo: repos candidatos a abertura (os de %s ficam de fora)\n\n' "$(basename "$SEMPRE")"
+[ -n "$_excl" ] && printf '  excluidos por .privado-sempre:%s\n' "$_excl"
+printf '  varrendo %s repositorio(s) candidato(s) a abertura\n' "$_nalvo"
+if [ "$_nalvo" -eq 0 ]; then
+  printf '\n  BLOQUEIO: nenhum repositorio no escopo. Isto NAO e "esta limpo":\n'
+  printf '     e "nao foi conferido". Falhando FECHADO.\n'
+  bloq_pessoa=1
+fi
+_bin=$(find $ALVOS -type f \( -name '*.pdf' -o -name '*.png' -o -name '*.jpg' -o -name '*.epub' \) -not -path '*/.git/*' 2>/dev/null | grep -c . )
+if [ "$_bin" -gt 0 ]; then
+  printf '  AVISO: %s binario(s) NAO VARRIDO(S) (pdf/png/jpg/epub).\n' "$_bin"
+  printf '     grep -I os pula. Nao escaneado NAO e limpo (RG-22).\n'
+  printf '     Se sao gerados das fontes: corrigir a fonte e RECONSTRUIR.\n'
+fi
+printf '\n'
 
 if [ ! -f "$LISTA" ]; then
   printf '  ⬜ %s não existe.\n' "$LISTA"
@@ -57,7 +72,12 @@ else
   _achou=0
   while IFS= read -r nome; do
     case "$nome" in ''|'#'*) continue;; esac
-    _hits=$(grep -rlI --exclude-dir=.git -- "$nome" $ALVOS 2>/dev/null | grep -v "/\.terceiros$")
+    _hits=$(grep -rliI --exclude-dir=.git -- "$nome" $ALVOS 2>/dev/null | grep -v "/\.terceiros$")
+    _st=$?
+    if [ "$_st" -gt 1 ]; then
+      printf '  BLOQUEIO %-20s grep FALHOU (status %s). Nao e ausente.\n' "$nome" "$_st"
+      bloq_pessoa=1; continue
+    fi
     _n=$(printf '%s' "$_hits" | grep -c . )
     if [ "$_n" -gt 0 ]; then
       printf '  🔴 %-24s em %s arquivo(s) de repo ABRÍVEL:\n' "$nome" "$_n"
@@ -67,7 +87,12 @@ else
       printf '  ✅ %-24s ausente dos repos abríveis\n' "$nome"
     fi
   done < "$LISTA"
-  [ "$_achou" -eq 0 ] && printf '\n  ✅ nenhum nome da lista aparece no corpus.\n'
+    if [ "$_achou" -eq 0 ]; then
+      printf '\n  OK: nenhum nome da lista aparece nos repos abriveis.\n'
+      printf '     LIMITE DECLARADO: casamento literal (ignora caixa).\n'
+      printf '     Grafias variantes, apelidos e nomes em imagem NAO sao\n'
+      printf '     detectados. Ausencia aqui e evidencia fraca (RG-22).\n'
+    fi
 fi
 
 # ── 2 · há o que atacar? ──────────────────────────────────────────
